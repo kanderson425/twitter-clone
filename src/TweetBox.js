@@ -10,7 +10,12 @@ function TweetBox() {
           <Avatar src="https://static.onecms.io/wp-content/uploads/sites/47/2020/09/03/brown-puppy-sssxyuZape8-unsplash-2000.jpg" />
           <input placeholder="What's happening?" />
         </div>
-        <Button>Tweet</Button>
+        <input
+          className="tweetBox__imageInput"
+          placeholder="Enter image URL"
+          type="text"
+        />
+        <Button className="tweetBox__tweetButton">Tweet</Button>
       </form>
     </div>
   );
