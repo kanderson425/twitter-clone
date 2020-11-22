@@ -19,7 +19,7 @@ function Sidebar() {
       <SidebarOption active Icon={HomeIcon} text="Home" />
       <SidebarOption Icon={SearchIcon} text="Explore" />
       <SidebarOption Icon={NotificationsNoneIcon} text="Notifications" />
-      <SidebarOption Icon={MailOutlineIcon} text="Messagegs" />
+      <SidebarOption Icon={MailOutlineIcon} text="Messages" />
       <SidebarOption Icon={BookmarkBorderIcon} text="Bookmarks" />
       <SidebarOption Icon={ListAltIcon} text="Lists" />
       <SidebarOption Icon={PerIdentityIcon} text="Profile" />
