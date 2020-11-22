@@ -45,3 +45,8 @@
 .post__avatar {
   padding: 20px;
 }
+
+.post__footer__deleteButton:hover {
+  color: var(--twitter-color);
+  cursor: pointer;
+}
