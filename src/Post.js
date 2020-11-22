@@ -19,26 +19,24 @@ function Post({
   return (
     <div className="post">
       <div className="post__avatar">
-        <Avatar src="https://static.onecms.io/wp-content/uploads/sites/47/2020/09/03/brown-puppy-sssxyuZape8-unsplash-2000.jpg" />
+        <Avatar src={avatar} />
       </div>
       <div className="post__body">
         <div classNamee="post__header">
           <div className="post__headerText">
             <h3>
-              Kyle Anderson{" "}
+              {displayName}{" "}
               <span className="post__headerSpecial">
-                <VerifiedUserIcon className="post__badge" /> @kanderson425
+                {verified && <VerifiedUserIcon className="post__badge" />} @
+                {username}
               </span>
             </h3>
           </div>
           <div className="post__headerDescription">
-            <p>I challenge you to build a Twitter Clone with React</p>
+            <p>{text}</p>
           </div>
         </div>
-        <img
-          src="https://media3.giphy.com/media/65ATdpi3clAdjomZ39/giphy.gif"
-          alt=""
-        />
+        <img src={image} alt="" />
         <div className="post__footer">
           <ChatButtonOutlineIcon fontSize="small" />
           <RepeatIcon fontSize="small" />
