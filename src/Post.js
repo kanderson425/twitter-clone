@@ -2,6 +2,10 @@ import React from "react";
 import "./Post.css";
 import { Avatar, Button } from "@material-ui/core";
 import VerifiedUserIcon from "@material-ui/icons/VerifiedUser";
+import ChatButtonOutlineIcon from "@material-ui/icons/ChatBubbleOutline";
+import RepeatIcon from "@material-ui/icons/Repeat";
+import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
+import PublishIcon from "@material-ui/icons/Publish";
 
 function Post({
   displayName,
@@ -13,7 +17,7 @@ function Post({
   avatar,
 }) {
   return (
-    <div clasName="post">
+    <div className="post">
       <div className="post__avatar">
         <Avatar src="https://static.onecms.io/wp-content/uploads/sites/47/2020/09/03/brown-puppy-sssxyuZape8-unsplash-2000.jpg" />
       </div>
@@ -22,7 +26,7 @@ function Post({
           <div className="post__headerText">
             <h3>
               Kyle Anderson{" "}
-              <span>
+              <span className="post__headerSpecial">
                 <VerifiedUserIcon className="post__badge" /> @kanderson425
               </span>
             </h3>
@@ -35,6 +39,12 @@ function Post({
           src="https://media3.giphy.com/media/65ATdpi3clAdjomZ39/giphy.gif"
           alt=""
         />
+        <div className="post__footer">
+          <ChatButtonOutlineIcon fontSize="small" />
+          <RepeatIcon fontSize="small" />
+          <FavoriteBorderIcon fontSize="small" />
+          <PublishIcon fontSize="small" />
+        </div>
       </div>
     </div>
   );
