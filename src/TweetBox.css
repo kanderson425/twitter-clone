@@ -19,11 +19,18 @@
   margin-left: 20px;
   font-size: 20px;
   border: none;
+  background-color: #16212b;
+  color: white;
 }
 
 .tweetBox__imageInput {
   border: none;
   padding: 10px;
+  background-color: #16212b;
+  color: white;
+  border-top: solid 1px rgb(56, 68, 77);
+  margin-left: 80px;
+  margin-right: 20px;
 }
 
 .tweetBox__tweetButton {
@@ -35,6 +42,12 @@
   border-radius: 30px !important;
   width: 80px;
   height: 40px !important;
-  margin-top: 20px !important;
+  /* margin-top: 20px !important; */
   margin-left: auto !important;
+}
+
+.tweetBox__tweetButton:hover {
+  color: var(--twitter-color) !important;
+  border: solid 1px var(--twitter-color) !important;
+  background-color: white !important;
 }

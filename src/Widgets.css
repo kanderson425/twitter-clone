@@ -5,16 +5,19 @@
 .widgets__input {
   display: flex;
   align-items: center;
-  background-color: var(--twitter-background);
+  /* background-color: var(--twitter-background); */
+  background-color: #253441;
   padding: 10px;
   border-radius: 20px;
   margin-top: 10px;
   margin-left: 20px;
+  font-size: 15px;
 }
 
 .widgets__input > input {
   border: none;
-  background-color: var(--twitter-background);
+  /* background-color: var(--twitter-background); */
+  background-color: #253441;
 }
 .widgets__searchIcon {
   color: gray;

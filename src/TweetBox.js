@@ -10,19 +10,20 @@ function TweetBox() {
 
   const sendTweet = (e) => {
     e.preventDefault();
-    console.log("sendTweet function hit");
-    console.log("This is the tweetMessage " + tweetMessage);
-
-    db.collection("posts").add({
-      displayName: "Kyle Anderson",
-      username: "kanderson425",
-      verified: true,
-      text: tweetMessage,
-      image: tweetImage,
-      avatar:
-        "https://static.onecms.io/wp-content/uploads/sites/47/2020/09/03/brown-puppy-sssxyuZape8-unsplash-2000.jpg",
-      timestamp: firebase.firestore.Timestamp.now(),
-    });
+    if (tweetMessage == "" && tweetImage == "") {
+      alert("Invalid Tweet: You have to add text or an image!");
+    } else {
+      db.collection("posts").add({
+        displayName: "Kyle Anderson",
+        username: "kanderson425",
+        verified: true,
+        text: tweetMessage,
+        image: tweetImage,
+        avatar:
+          "https://pbs.twimg.com/profile_images/1086762181192933376/WwGnWM5z_400x400.jpg",
+        timestamp: firebase.firestore.Timestamp.now(),
+      });
+    }
 
     setTweetMessage("");
     setTweetImage("");
@@ -32,7 +33,7 @@ function TweetBox() {
     <div className="tweetBox">
       <form>
         <div className="tweetBox__input">
-          <Avatar src="https://static.onecms.io/wp-content/uploads/sites/47/2020/09/03/brown-puppy-sssxyuZape8-unsplash-2000.jpg" />
+          <Avatar src="https://pbs.twimg.com/profile_images/1086762181192933376/WwGnWM5z_400x400.jpg" />
           <input
             onChange={(e) => setTweetMessage(e.target.value)}
             value={tweetMessage}

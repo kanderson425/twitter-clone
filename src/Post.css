@@ -19,16 +19,19 @@
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+  color: white;
 }
 
 .post__headerDescription {
   margin-bottom: 10px;
-  font-size: 15px;
+  font-size: 25px;
+  color: white;
 }
 
 .post__headerText > h3 {
   font-size: 15px;
   margin-bottom: 5px;
+  color: white;
 }
 
 .post__badge {
@@ -48,5 +51,5 @@
 
 .post__footer__deleteButton:hover {
   color: var(--twitter-color);
-  cursor: pointer;
+  cursor: point;
 }

@@ -1,6 +1,12 @@
 body {
   --twitter-color: #50b7f5;
-  --twitter-background: #e6ecf0;
+  /* --twitter-background: #e6ecf0; */
+  --twitter-background: rgb(56, 68, 77);
+  background-color: #16202b;
+}
+
+*:focus {
+  outline: none;
 }
 
 .app {
